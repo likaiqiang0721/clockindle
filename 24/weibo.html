@@ -57,7 +57,10 @@
         // 微博热搜模块
         function weibo() {
             var xhr = createXHR();
-            xhr.open("GET", "https://v1.alapi.cn/api/new/wbtop?num=3", true);
+            //xhr.open("GET", "https://v1.alapi.cn/api/new/wbtop?num=3", true);
+            //20240421 旧的api无效了，更新了api调用，添加了token。
+            xhr.open("GET", "https://v2.alapi.cn/api/new/wbtop?token=buYvmQLH4AS8W1V4&num=3", true);
+
             xhr.onreadystatechange = function() {
                 if (this.readyState == 4) {
                     var data = JSON.parse(this.responseText);
