@@ -162,11 +162,11 @@
                         var weaInfo = '<div>最高/低气温：' + highTemp + '/' + lowTemp + '&#8451;</div>' +
                             '<div>湿度：' + weather_data.humidity + '</div>' +
                             '<div>空气质量：' + air + airLevel + '</div>' +
-                            '<div>风向：' + weather_data.wind + '</div>' +
+                            //'<div>风向：' + weather_data.wind + '</div>' +
                             '<div>风速：' + weather_data.wind_speed + ' ' + weather_data.wind_scale + '</div>' +
                             '<div>更新时间：' + updateTime + '</div>';
                         document.getElementById('weaTitle').innerHTML = weather_data.city + '当前天气'
-                        document.getElementById('weaImg').innerHTML = weaImg
+                        //document.getElementById('weaImg').innerHTML = weaImg
                         document.getElementById('weaTemp').innerHTML = weaTemp
                         document.getElementById('weaInfo').innerHTML = weaInfo
                     } else {
