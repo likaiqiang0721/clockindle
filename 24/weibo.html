@@ -149,8 +149,9 @@
                         }
 
                         var weaImg = '<span class="iconfont">' + img + '</span>' + '<div>天气：' + weather_data.weather + '</div>';
-                        var weaTemp = '<div class="tempNum">' + weather_data.temp + '<div class="symbol">&#8451;</div></div>' +
-                            '<div>当前气温</div>';
+                        var weaTemp = '<div class="tempNum">' + weather_data.temp + '<div class="symbol">&#8451;</div></div>';
+                        // +'<div>当前气温</div>'
+                        
                         var highTemp = weather_data.max_temp // 日间气温/最高气温
                         var lowTemp = weather_data.min_temp // 夜间气温/最低气温
                         var air = weather_data.aqi.air
@@ -161,7 +162,7 @@
                         updateTime = updateTime[updateTime.length - 1]
                         var weaInfo = '<div>最高/低气温：' + highTemp + '/' + lowTemp + '&#8451;</div>' +
                             '<div>湿度：' + weather_data.humidity + '</div>' +
-                            '<div>空气质量：' + air + airLevel + '</div>' +
+                            //'<div>空气质量：' + air + airLevel + '</div>' +
                             //'<div>风向：' + weather_data.wind + '</div>' +
                             //'<div>风速：' + weather_data.wind_speed + ' ' + weather_data.wind_scale + '</div>' +
                             '<div>更新时间：' + updateTime + '</div>';
